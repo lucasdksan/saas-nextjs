@@ -3,13 +3,16 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --main-bg: #2B2B2B;
+  --default-btn: #F8D57E;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-main-bg: var(--main-bg);
+  --color-default-btn: var(--default-btn);
+  --font-roboto: var(--font-roboto);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -20,7 +23,7 @@
 }
 
 body {
-  background: var(--background);
+  background: var(--main-bg);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
