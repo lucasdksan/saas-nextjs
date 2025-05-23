@@ -5,12 +5,14 @@
   --foreground: #171717;
   --main-bg: #2B2B2B;
   --default-btn: #F8D57E;
+  --danger-base: rgb(230 24 54);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-main-bg: var(--main-bg);
+  --color-danger-base: var(--danger-base);
   --color-default-btn: var(--default-btn);
   --font-roboto: var(--font-roboto);
 }

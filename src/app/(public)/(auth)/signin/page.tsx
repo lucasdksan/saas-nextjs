@@ -44,7 +44,7 @@ export default function Singin() {
                         placeholder="Email"
                         {...register("email")}
                     />
-                    {errors.email && <p style={{ color: "red" }}>{errors.email.message}</p>}
+                    {errors.email && <p className="text-sm text-danger-base">{errors.email.message}</p>}
                     <FormInput
                         htmlFor="password"
                         title="Senha"
@@ -52,14 +52,19 @@ export default function Singin() {
                         placeholder="Senha"
                         {...register("password")}
                     />
-                    {errors.password && <p style={{ color: "red" }}>{errors.password.message}</p>}
+                    {errors.password && <p className="text-sm text-danger-base">{errors.password.message}</p>}
                 </fieldset>
                 {serverState?.error && (
-                    <p style={{ color: "red", marginBottom: 5 }}>{serverState.error}</p>
+                    <p className="text-sm text-danger-base" style={{ marginBottom: 5 }}>{serverState.error}</p>
                 )}
                 <Button type="submit">Entrar</Button>
                 <Link href="/forgot" className="text-sm font-medium text-[#F8D57E] transition">Esqueci minha senha</Link>
+                <div className="mb-6 mt-16 h-[2px] w-full bg-gray-200 max-md:mt-12" />
             </form>
+            <div className="flex flex-col w-full gap-1 rounded-md border border-[#121212] bg-[#121212] px-6 py-4 transition hover:brightness-125">
+                <span className="text-gray-200">Não tem uma conta?</span>
+                <Link className="text-[#F8D57E] font-bold" href="/register">Crie sua conta grátis</Link>
+            </div>
         </div>
     );
 }
