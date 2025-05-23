@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
-import "./globals.css";
+import "../../globals.css";
 
 const roboto = Roboto({
   variable: "--font-roboto",
@@ -8,8 +8,8 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "SaaS Template",
-  description: "Um template simples de SaaS com foco maior sobre o estudo do Nextjs",
+  title: "Autenticação",
+  description: "Página voltada para autenticação",
 };
 
 export default function RootLayout({
@@ -19,9 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body
-        className={`${roboto.variable} antialiased`}
-      >
+      <body className={`${roboto.variable} antialiased h-screen w-screen`}>
         {children}
       </body>
     </html>

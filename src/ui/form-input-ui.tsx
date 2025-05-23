@@ -1,4 +1,4 @@
-type StrategiesValues = "default";
+type StrategiesValues = "default" | "form";
 type TypeClassName = { 
     formClass: string; 
     labelClass: string; 
@@ -15,6 +15,12 @@ const styleStrategies = {
             formClassName: `w-full border-none outline-0 ${ newClass?.formClass ?? "" }`,
             labelClassName: `font-roboto not-italic font-normal ${ newClass?.labelClass ?? "" }`,
             inputClassName: `w-full outline-0 font-roboto ${ newClass?.inputClass ?? "" }`,
+        }),
+    form: (newClass?: TypeClassName) =>
+        ({ 
+            formClassName: `w-full border-none outline-0 ${ newClass?.formClass ?? "" }`,
+            labelClassName: `font-roboto not-italic font-normal ${ newClass?.labelClass ?? "" }`,
+            inputClassName: `w-full outline-0 font-roboto mt-3 rounded-sm border border-solid border-transparent h-12 px-4 py-3 bg-[#121212] focus:border-[#F8D57E] ${ newClass?.inputClass ?? "" }`,
         })
 };
 

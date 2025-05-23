@@ -4,9 +4,9 @@ type TemplateProps = {
 
 export default function Template({ children }: TemplateProps) {
     return (
-        <main>
+        <main className="w-full h-full flex flex-col">
             <div className="hidden"></div>
-            <div>
+            <div className="w-full h-full">
                 { children }
             </div>
         </main>
