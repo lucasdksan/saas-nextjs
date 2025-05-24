@@ -18,7 +18,7 @@ export default function Register() {
     } = useForm<RegisterSchema>({
         resolver: zodResolver(registerSchema),
     });
-    const FormInput = createFormInput("form");
+    const FormInput = createFormInput("form", { labelClass: "text-white", formClass: "", inputClass: "text-white" });
     const Button = createButton("form", "mt-4 mb-2");
     const onSubmit = async (data: RegisterSchema) => {
         const formData = new FormData();

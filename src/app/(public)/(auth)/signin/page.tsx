@@ -18,7 +18,7 @@ export default function Singin() {
     } = useForm<SignInSchema>({
         resolver: zodResolver(signInSchema),
     });
-    const FormInput = createFormInput("form");
+    const FormInput = createFormInput("form", { labelClass: "text-white", formClass: "", inputClass: "text-white" });
     const Button = createButton("form", "mt-4 mb-2");
     const onSubmit = async (data: SignInSchema) => {
         const formData = new FormData();
