@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { AppProvider } from "@toolpad/core/AppProvider";
 
 export const metadata: Metadata = {
     title: "Dashboard",
@@ -14,7 +15,9 @@ export default function DashboardLayout({
         <div
             className={`antialiased h-screen w-screen`}
         >
-            {children}
+            <AppProvider>
+                {children}
+            </AppProvider>
         </div>
     );
 }

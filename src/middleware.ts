@@ -9,6 +9,7 @@ const publicRoutes: PublicRoutesType = [
     { path: "/signin", whenAuthenticated: "redirect" },
     { path: "/register", whenAuthenticated: "redirect" },
     { path: "/forgot", whenAuthenticated: "redirect" },
+    { path: "/dashboard", whenAuthenticated: "redirect" },
     { path: "/", whenAuthenticated: "next" },
 ];
 const REDIRECT_WHEN_NOT_AUTHENTICATED_ROUTE = "/signin";
