@@ -1,0 +1,61 @@
+{
+    "users": [
+        {
+            "id": "1",
+            "name": "Lucas da Silva Leoncio",
+            "email": "lucas.leoncio.silva@gmail.com",
+            "password": "123456789",
+            "username": "lucasdksan",
+            "birthDate": "1998-11-07T00:00:00.000Z",
+            "role": "admin",
+            "createAt": "2025-06-14T23:34:09.746Z",
+            "settings": {
+
+            }
+        },
+        {
+            "id": "2",
+            "name": "Leonardo da Silva Leoncio",
+            "email": "leonardo.silva@gmail.com",
+            "password": "9876543210",
+            "username": "leozon",
+            "birthDate": "2002-04-14T00:00:00.000Z",
+            "role": "user",
+            "createAt": "2025-06-14T23:34:09.746Z",
+            "settings": {
+
+            }
+        }
+    ],
+    "pets": [
+        {
+            "id": "1",
+            "name": "Cristal",
+            "type": "cachorro",
+            "race": "rua",
+            "gender": "F",
+            "userId": "2",
+            "createAt": "2025-06-14T23:34:09.746Z"
+        },
+        {
+            "id": "2",
+            "name": "Agata",
+            "type": "gato",
+            "race": "rua",
+            "gender": "F",
+            "userId": "2",
+            "createAt": "2025-06-14T23:34:09.746Z"
+        }
+    ],
+    "finances": [
+        {
+            "id": "1",
+            "value": 11000,
+            "userId": "2",
+            "petId": "1",
+            "description": "Remédio para o tratamento",
+            "type": "M",
+            "createAt": "2025-06-14T23:34:09.746Z"
+        }
+    ]
+}
